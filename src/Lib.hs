@@ -100,11 +100,11 @@ type Result = (Int, Int)
 
 data Response = Resp Int Int deriving (Eq, Ord)
 
-instance Monoid Response where
-    mempty = Resp 0 0
-
 instance Semigroup Response where
     (Resp c p) <> (Resp c' p') = Resp (c + c') (p + p')
+
+instance Monoid Response where
+    mempty = Resp 0 0
 
 instance Read Response where
     readPrec = prec minPrec (do

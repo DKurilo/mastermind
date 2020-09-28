@@ -28,7 +28,7 @@ library:
   source-dirs: src
 
 executables:
-  mastermind-exe:
+  mastermind:
     main:                Main.hs
     source-dirs:         app
     ghc-options:

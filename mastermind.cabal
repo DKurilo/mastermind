@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: d5a16f69b37fe87fa0a6c94a0ae53b9816dd693d8b85de28886dbf368292d9ff
+-- hash: 39a2a8a40dc484f617e99000ffcd85bf6053eeb6ce87699de82d208f760a2662
 
 name:           mastermind
 version:        0.1.0.0
@@ -38,7 +38,7 @@ library
     , random >=1.1 && <2
   default-language: Haskell2010
 
-executable mastermind-exe
+executable mastermind
   main-is: Main.hs
   other-modules:
       Paths_mastermind
