@@ -155,7 +155,7 @@ masterCoderPlay turns code = do
            putStrLn "You won this game!"
            return (1, 0)
        else do
-           putStrLn ("Result:\n" <> show resp)
+           putStrLn ("My hint (1 for each proper number on wrong place, 2 for each proper number on proper place):\n" <> show resp)
            (me, player) <- masterCoderPlay (turns - 1) code
            return (me + 1, player)
 
